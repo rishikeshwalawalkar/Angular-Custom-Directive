@@ -1,0 +1,18 @@
+<head>
+  
+</head>
+
+<body>
+ <div class = "panel panel-primary">
+   <div class = "panel panel-heading" ng-click= "collapse()">
+      {{user1.name}}  
+   </div>
+   <span class = "panel">
+     Address : {{user1.address.street}}, {{user1.address.city}}, {{user1.address.zip}}.
+     <br>
+     Friends  <ul><li ng-repeat = "a in user1.friends">{{a}}</li></ul>
+     Today's Quote :  Friend in need is friend indeed!! - Nitin Kabra
+   </span>
+ </div>
+ <button ng-show = "!isAdmin" class = "button btn-primary" ng-click = "clickMe()">Admin</button>
+</body>
